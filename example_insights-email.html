@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <style type="text/css">
   @media only screen and (max-width: 30em) {
-    .cta, .cta a {
+    .cta {
       display: block!important;
     }
   }
@@ -14,11 +14,7 @@
   </style>
 </head>
 
-<!-- NOTES
-Email client support:
-- Table-based layout is for Outlook
--->
-
+<!-- Notes: In general, Outlook doesn't understand block elements other than <table>. <p>, <div>, etc. do not render well. You'll see work-arounds in this template. -->
 <body style="margin: 0; padding: 0; background-color: #F4F7FA;">
   <table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#F4F7FA" align="center">
     <tbody>
@@ -27,28 +23,30 @@ Email client support:
         <td>
       <table border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" align="center" style="max-width: 600pt;">
     <tbody>
-      <!-- Banner: why should I read this? -->
+      <!-- BANNER -->
       <tr>
         <td>
-          <table border="0" cellpadding="20pt" cellspacing="0" bgcolor="#FFFFFF" align="center" width="100%" style="border-collapse: collapse;">
+          <table border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" align="center" width="100%" style="border-collapse: collapse;">
             <tr bgcolor="#002838">
-              <td style="font-family: 'open sans', sans-serif; color: #FFFFFF; font-size: 1.5em; font-weight: bold;" bgcolor="#002838" align="left" valign="middle">
+              <td style="font-family: 'open sans', sans-serif; color: #FFFFFF; font-size: 1.5em; font-weight: bold; padding: 20pt;" bgcolor="#002838" align="left" valign="middle">
+                    <!-- BANNER TITLE -->
                     <strong style="font-weight: normal; ">myaccount1</strong> <br /> January 2019
               </td>
-              <td bgcolor="#002838" align="right" valign="middle">
+              <td bgcolor="#002838" align="right" valign="middle" style="padding: 20pt;">
+                <!-- BANNER IMAGE (optional) -->
                 <img src="https://unicorn-email.herokuapp.com/report.png" style="max-width: 100%!important;" width="91" height="72" alt="" />
               </td>
             </tr>
           </table>
         </td>
       </tr>
-      <!-- Subtitle (optional) -->
+      <!-- SUBTITLE (optional) -->
       <tr>
         <td style="padding: 10pt 20pt; font-family: 'open sans', sans-serif; color: #59767F;" bgcolor="#FFFFFF" align="left">
           <img src="https://unicorn-email.herokuapp.com/bug.png" alt="WP Engine" width="131" height="24" />
         </td>
       </tr>
-      <!-- Data table (optional) -->
+      <!-- DATA TABLE (component example) -->
       <tr>
         <td>
           <table width="100%" cellpadding="0" cellspacing="0" border="0">
@@ -70,36 +68,174 @@ Email client support:
                 11
               </td>
             </tr>
+            <!-- gray row -->
+            <tr bgcolor="#F4F7FA">
+              <td style="padding: 10pt 20pt; font-family: 'open sans', sans-serif;" align="left" valign="middle">
+                Visitors
+              </td>
+              <td style="padding: 10pt 20pt; font-family: 'open sans', sans-serif;" align="right" valign="middle">
+                547,234
+              </td>
+            </tr>
+            <!-- white row -->
+            <tr bgcolor="#FFFFFF">
+              <td style="padding: 10pt 20pt; font-family: 'open sans', sans-serif;" align="left" valign="middle">
+                Visitor change
+              </td>
+              <td style="padding: 10pt 20pt; font-family: 'open sans', sans-serif;" align="right" valign="middle">
+                <span style="color: #D21B46;">&darr; 13%</span>
+              </td>
+            </tr>
+            <!-- gray row -->
+            <tr bgcolor="#F4F7FA">
+              <td style="padding: 10pt 20pt; font-family: 'open sans', sans-serif;" align="left" valign="middle">
+                % uncached traffic
+              </td>
+              <td style="padding: 10pt 20pt; font-family: 'open sans', sans-serif;" align="right" valign="middle">
+                3%
+              </td>
+            </tr>
+            <!-- white row -->
+            <tr bgcolor="#FFFFFF">
+              <td style="padding: 10pt 20pt; font-family: 'open sans', sans-serif;" align="left" valign="middle">
+                50X errors
+              </td>
+              <td style="padding: 10pt 20pt; font-family: 'open sans', sans-serif;" align="right" valign="middle">
+                14
+              </td>
+            </tr>
           </table>
         </td>
       </tr>
-      <!-- Call to action -->
+      <!-- CALL TO ACTION -->
       <tr>
-        <td style="padding: 10pt 20pt 20pt 20pt; font-family: 'open sans', sans-serif; font-size: 1em;" bgcolor="#FFFFFF" align="left">
-          <div class="cta" style="border-radius: 2pt; background-color: #7E5CEF; display: inline-block; text-align: center; vertical-align: middle;">
-            <a title="Support Garage article" style="display: inline-block; padding: 1em 2em; color: #FFFFFF!important; text-decoration: none;" href="#">
-              Learn about these stats
-              <img src="https://unicorn-email.herokuapp.com/spacer.png" width="0" height="16" alt="" />
+        <td style="padding: 10pt 20pt 20pt 20pt; font-family: 'open sans', sans-serif; color: #FFFFFF;" bgcolor="#FFFFFF" align="left">
+            <!-- Note: a, span, font fixes Outlook bug -->
+            <a title="Support Garage article" style="display: inline-block; padding: .8em 1.5em; color: #FFFFFF; text-decoration: none; border-radius: 2pt; background-color: #7E5CEF;" href="#">
+              <span style="color: #FFFFFF">
+                <font color="#FFFFFF">
+                  Learn about these stats
+                </font>
+              </span>
+            </a>
+        </td>
+      </tr>
+      <!-- SECTION BREAK -->
+      <tr>
+        <td>
+          <hr style="height: 1px; background-color: #CFDDE9; border: none;" />
+        </td>
+      </tr>
+      <!-- CARDS (component example) -->
+      <!-- CARDS HEADER -->
+      <tr>
+        <td style="padding: 10pt 20pt; font-family: 'open sans', sans-serif; color: #002838; font-size: 1.2em; font-weight: bold;" bgcolor="#FFFFFF" align="left">
+          Tips for better performance
+        </td>
+      </tr>
+      <!-- CARDS CONTENT -->
+      <!-- card -->
+      <tr>
+        <td style="padding: 10pt 20pt; font-family: 'open sans', sans-serif; color: #002838;" bgcolor="#FFFFFF" align="left">
+          <div style="background-color: #F4F7FA; padding: 1em;">
+            <!-- card title -->
+            <strong>PHP 7.2 upgrade guide</strong>
+            <br /><br />
+            <!-- card content -->
+            Are your sites ready for PHP 7.2? The platform upgrade March 28th, 2019 will improve site speed and security across the board, but it could affect the appearance of your site. Fortuantely, you can preview how your site will look and make tweaks if necessary.
+            <br /><br />
+            <!-- card CTA -->
+            <!-- Note: a, span, font fixes Outlook bug -->
+            <a title="PHP Upgrade Guide" style="display: inline-block; padding: .8em 1.5em; color: #FFFFFF; text-decoration: none; border-radius: 2pt; background-color: #002838;" href="https://wpengine.com/support/php-7-2-upgrade-guide/">
+              <span style="color: #FFFFFF">
+                <font color="#FFFFFF">
+                  Read more
+                </font>
+              </span>
             </a>
           </div>
         </td>
       </tr>
-      <!-- More content (optional) -->
+      <!-- card -->
       <tr>
-        <td style="padding: 10pt 20pt; font-family: 'open sans', sans-serif; color: #002838; font-size: 1em; line-height: 1.6em;" bgcolor="#FFFFFF" align="left">
-          If you have questions, please contact WP Engine Technical Support 24/7, and our team of experts will be happy to speak with you.
+        <td style="padding: 10pt 20pt; font-family: 'open sans', sans-serif; color: #002838;" bgcolor="#FFFFFF" align="left">
+          <div style="background-color: #F4F7FA; padding: 1em;">
+            <!-- card title -->
+            <strong>WordPress best practices</strong>
+            <br /><br />
+            <!-- card content -->
+            Learn WP Engine's recommendation for WordPress best practices. Adhering to best practices will ensure you and your team are set up for success in the future as you build upon your skills and your website.
+            <br /><br />
+            <!-- card CTA -->
+            <!-- Note: a, span, font fixes Outlook bug -->
+            <a title="PHP Upgrade Guide" style="display: inline-block; padding: .8em 1.5em; color: #FFFFFF; text-decoration: none; border-radius: 2pt; background-color: #002838;" href="https://wpengine.com/support/wordpress-best-practices/">
+              <span style="color: #FFFFFF">
+                <font color="#FFFFFF">
+                  Read more
+                </font>
+              </span>
+            </a>
+          </div>
         </td>
       </tr>
-      <!-- Signature -->
+      <!-- SECTION BREAK -->
       <tr>
-        <td style="padding: 10pt 20pt; font-family: 'open sans', sans-serif; color: #002838; font-size: 1em; line-height: 1.6em;" bgcolor="#FFFFFF" align="left">
+        <td>
+          <hr style="height: 1px; background-color: #CFDDE9; border: none;" />
+        </td>
+      </tr>
+      <!-- CARDS (component example) -->
+      <!-- CARDS HEADER -->
+      <tr>
+        <td style="padding: 10pt 20pt; font-family: 'open sans', sans-serif; color: #002838; font-size: 1.2em; font-weight: bold;" bgcolor="#FFFFFF" align="left">
+          Product announcements
+        </td>
+      </tr>
+      <!-- CARDS CONTENT -->
+      <!-- card -->
+      <tr>
+        <td style="padding: 10pt 20pt; font-family: 'open sans', sans-serif; color: #002838;" bgcolor="#FFFFFF" align="left">
+          <div style="background-color: #F4F7FA; padding: 1em;">
+            <!-- card title -->
+            <strong>Global Edge Security is here</strong>
+            <br /><br />
+            <!-- card content -->
+            Global Edge Security is a high-performance advanced security solution with DDoS protection and a Web Application Firewall (WAF), designed to keep your sites secure while delivering a faster experience for your customers.
+            <br /><br />
+            <!-- card CTA -->
+            <!-- Note: a, span, font fixes Outlook bug -->
+            <a title="PHP Upgrade Guide" style="display: inline-block; padding: .8em 1.5em; color: #FFFFFF; text-decoration: none; border-radius: 2pt; background-color: #002838;" href="https://wpengine.com/global-edge-security/">
+              <span style="color: #FFFFFF">
+                <font color="#FFFFFF">
+                  Read more
+                </font>
+              </span>
+            </a>
+          </div>
+        </td>
+      </tr>
+      <!-- CLOSING NOTES (optional) -->
+      <tr>
+        <td style="padding: 10pt 20pt; font-family: 'open sans', sans-serif; color: #002838;" bgcolor="#FFFFFF" align="left">
+          We hope this report was helpful. As always, if you ever need us, WP Engine Technical Support 24/7 is here for you.
+        </td>
+      </tr>
+      <!-- SIGNATURE -->
+      <tr>
+        <td style="padding: 10pt 20pt; font-family: 'open sans', sans-serif; color: #002838;" bgcolor="#FFFFFF" align="left">
           Regards,<br />
           WP Engine team
         </td>
       </tr>
-      <!-- Boilerplate -->
+      <!-- SECTION BREAK -->
       <tr>
-        <td bgcolor="#FFFFFF" style="padding: 10pt 20pt; font-family: 'open sans', sans-serif; font-size: .8em; color: #59767F; border-top: 1px solid #CFDDE9;">
+        <td>
+          <hr style="height: 1px; background-color: #CFDDE9; border: none;" />
+        </td>
+      </tr>
+      <!-- BOILERPLATE -->
+      <tr>
+        <td bgcolor="#FFFFFF" style="padding: 10pt 20pt; font-family: 'open sans', sans-serif; font-size: .8em; color: #59767F;">
           © WP Engine    504 Lavaca St.    Suite 1000    Austin, TX 78701
           <br /><br />
           Not the right contact for this account? Please forward on to the appropriate person, and be sure to update your account's users in User Portal.
