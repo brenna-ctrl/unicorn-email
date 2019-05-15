@@ -13,7 +13,7 @@
 <body>
   <h1>Unicorn email templates</h1>
   <p>
-    Receiving and responding to email is frequently an important step in tasks our customers want to accomplish. We've provided these templates as part of an overall effort to standardize the way our product communicates with customers.
+    These templates standardize the way our products communicate with their users.
   </p>
   <h2>Templates</h2>
   <p>
