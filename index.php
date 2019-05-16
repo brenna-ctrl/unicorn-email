@@ -15,15 +15,16 @@
   <p>
     These templates standardize the way our products communicate with their users.
   </p>
-  <h2>Templates</h2>
+  <h2>Basic email</h2>
   <ul>
-    <li><a href="template_transactional-email.html">Template transactional email</a></li>
-    <li>Tempalte semi-transactional email <em>— coming soon</em></li>
+    <li><a href="template_basic.html">Template</a></li>
+    <li><a href="example_basic.html">Example</a></li>
+
   </ul>
-  <h2>Examples</h2>
+  <h2>Fancy email</h2>
 <ul>
-  <li><a href="example_transactional-email.html">Example transactional email</a></li>
-  <li><a href="example_semi-transactional-email.html">Example semi-transactional email</a></li>
+  <li><a href="template_fancy.html">Template</a></li>
+  <li><a href="example_fancy.html">Example</a></li>
 </ul>
 </body>
 
