@@ -16,13 +16,14 @@
     These templates standardize the way our products communicate with their users.
   </p>
   <h2>Templates</h2>
-  <p>
-    Coming soon
-  </p>
+  <ul>
+    <li><a href="template_transactional-email.html">Template transactional email</a></li>
+    <li>Tempalte semi-transactional email <em>— coming soon</em></li>
+  </ul>
   <h2>Examples</h2>
 <ul>
   <li><a href="example_transactional-email.html">Example transactional email</a></li>
-  <li><a href="example_insights-email.html">Example insights email</a></li>
+  <li><a href="example_semi-transactional-email.html">Example insights email</a></li>
 </ul>
 </body>
 
