@@ -23,7 +23,7 @@
   <h2>Examples</h2>
 <ul>
   <li><a href="example_transactional-email.html">Example transactional email</a></li>
-  <li><a href="example_semi-transactional-email.html">Example insights email</a></li>
+  <li><a href="example_semi-transactional-email.html">Example semi-transactional email</a></li>
 </ul>
 </body>
 
