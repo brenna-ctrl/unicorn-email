@@ -15,16 +15,16 @@
   <p>
     These templates standardize the way our products communicate with their users.
   </p>
-  <h2>Basic email</h2>
+  <h2>Focused email</h2>
   <ul>
-    <li><a href="template_basic.html">Template</a></li>
-    <li><a href="example_basic.html">Example</a></li>
+    <li><a href="template_focused.html">Template</a></li>
+    <li><a href="example_focused.html">Example</a></li>
 
   </ul>
-  <h2>Fancy email</h2>
+  <h2>Sectioned email</h2>
 <ul>
-  <li><a href="template_fancy.html">Template</a></li>
-  <li><a href="example_fancy.html">Example</a></li>
+  <li><a href="template_sectioned.html">Template</a></li>
+  <li><a href="example_sectioned.html">Example</a></li>
 </ul>
 </body>
 
